@@ -17,13 +17,11 @@ body {
     padding-top: 50px;
 }
 
-h1 {
+.logo {
     text-align: center;
-    font-family: 'Old Standard TT', serif;
-    font-size: 2.3em
+    font-size: 2.3em;
+    font-family: 'Quattrocento', serif;
 }
-
-hr {}
 
 .content {
     max-width: 900px;
@@ -47,7 +45,7 @@ hr {}
 }
 
 .top-info .info {
-    flex-grow: 1;
+    flex: 1 1 0;
     text-align: center;
     display: inline-block;
 }
