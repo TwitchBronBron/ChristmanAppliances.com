@@ -29,7 +29,6 @@
                 <a target="_blank" href="tel:717-369-2377">717-369-2377</a>
             </div>
         </div>
-        <div class="spacer"></div>
         <div class="navbar">
             <hr class="borderline" />
             <ul>
@@ -49,12 +48,14 @@
 
         <div id="sales" class="section">
             <h2>Sales</h2>
+            <img src="images/inside.jpg" />
             <p>
                 We carry a variety of appliances, including refrigerators, freezers, washers,
                 dryers, dishwashers, ranges and stoves, air conditioners, microwaves,
                 dehumidifiers, vacuums and more, from brands like Frigidair, GE, Sharp, and Hover.
 
-                We carry a combination of new and quality used items. All used items have been inspected by Ron personally
+                We carry a combination of new and quality used items. All used items have been inspected by Ron
+                personally
                 and are in great working condition. We also sell a wide range of replacement parts for common
                 appliances.
             </p>
@@ -76,14 +77,10 @@
         <hr />
         <div id="contact" class="section">
             <h2>Contact Us</h2>
-            <p text-left>
+            <p text-center>
                 Whether you have a question about products, parts, or about Christman Appliances in general, we would
                 love to hear from you!
             </p>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
             <div class="flex">
                 <div text-center>
                     <div inline-block text-left>
@@ -120,6 +117,10 @@
                 </div>
             </div>
         </div>
+        <div id="copyright">
+            <hr />
+            &copy; <span id="copyrightYear">2019</span> Ronald Christman
+        </div>
     </div>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -130,6 +131,10 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-136826594-1');
+    </script>
+    <script>
+        //for pages that support javascript, update the copyright year to the current year
+        document.getElementById('copyrightYear').innerHTML = new Date().getFullYear(); 
     </script>
 </body>
 
