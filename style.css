@@ -127,7 +127,8 @@ hr {
     display: none;
 }
 
-@media(min-width:450px) {
+/* navbar hide borders and show centerline on medium+ devices */
+@media(min-width:400px) {
     .navbar hr.centerline {
         display: block;
     }
