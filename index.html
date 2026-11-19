@@ -16,14 +16,14 @@
     <meta property="og:image" content="https://christmanappliances.com/images/outside.jpg">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238C3B2B'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='34' font-weight='bold' fill='%23FAF8F5'%3ECA%3C/text%3E%3C/svg%3E">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238C3B2B'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='34' font-weight='bold' fill='%23FAF7F2'%3ECA%3C/text%3E%3C/svg%3E">
 
     <!-- Google Fonts v2 with display=swap -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 
     <!-- Local Business Structured Data -->
     <script type="application/ld+json">
@@ -67,135 +67,205 @@
 </head>
 
 <body>
-    <div class="body-container">
-        <a href="images/outside.jpg" target="_blank" rel="noopener" pointer>
-            <picture>
-                <source srcset="images/outside.webp" type="image/webp">
-                <img class="full" src="images/outside.jpg" alt="Front view of the Christman Appliances building" width="1600" height="747" fetchpriority="high">
-            </picture>
-        </a>
-        <h1 class="logo">Christman Appliances</h1>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-        <div class="top-contact-info">
-            <div text-left class="info">
-                <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Christman+Appliances+711+Twin+Bridge+Road+Chambersburg+PA+17202">
-                    711 Twin Bridge Road
-                </a>
-            </div>
-            <div text-center class="info">
-                <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Christman+Appliances+711+Twin+Bridge+Road+Chambersburg+PA+17202">
-                    Chambersburg, PA 17202
-                </a>
-            </div>
-            <div text-right class="info">
-                <a href="tel:717-369-2377">717-369-2377</a>
-            </div>
-        </div>
-        <div class="navbar">
-            <hr class="borderline">
-            <ul>
-                <li>
-                    <a href="#sales">Sales</a>
-                </li>
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-            <hr class="centerline">
-            <hr class="borderline">
-        </div>
-
-        <div id="sales" class="section">
-            <h2>Sales</h2>
-            <a href="images/inside.jpg" target="_blank" rel="noopener" pointer>
-                <picture>
-                    <source srcset="images/inside.webp" type="image/webp">
-                    <img class="full" src="images/inside.jpg" alt="Many stoves and refrigerators in orderly rows inside the Christman Appliances store" width="1600" height="687" loading="lazy">
-                </picture>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#top">
+                <span class="brand-name">Christman Appliances</span>
+                <span class="brand-sub">Chambersburg, PA &bull; Est. 1985</span>
             </a>
-            <p>
-                We carry a variety of appliances, including refrigerators, freezers, washers,
-                dryers, dishwashers, ranges and stoves, air conditioners, microwaves,
-                dehumidifiers, vacuums and more, from brands including Frigidaire, GE, Sharp, and Hoover.
 
-                We carry a combination of new and quality used items. All used items have been inspected by Ron
-                personally
-                and are in great working condition. We also sell a wide range of replacement parts for common
-                appliances.
-            </p>
-
-            <p><a href="#contact">Give us a call</a> or visit the store to see what we have in stock. If we don't have
-                what you are looking for, we can most likely order it for you!</p>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="#sales">Sales &amp; Parts</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <hr>
+    <main id="main-content">
+        <section id="top" class="hero">
+            <div class="container">
+                <div class="hero-card">
+                    <a class="hero-media" href="images/outside.jpg" target="_blank" rel="noopener" aria-label="View full-size photo of the Christman Appliances storefront">
+                        <picture>
+                            <source srcset="images/outside.webp" type="image/webp">
+                            <img src="images/outside.jpg" alt="Front view of the Christman Appliances brick storefront on Twin Bridge Road" width="1600" height="747" fetchpriority="high">
+                        </picture>
+                    </a>
 
-        <div id="about" class="section">
-            <h2>About</h2>
-            <a href="images/profile.jpg" target="_blank" rel="noopener" pointer>
-                <picture>
-                    <source srcset="images/profile.webp" type="image/webp">
-                    <img class="full" src="images/profile.jpg" alt="Ron Christman standing in front of the Christman Appliances company truck" width="1600" height="946" loading="lazy">
-                </picture>
-            </a>
-            <p>
-                Christman Appliances has been owned and operated by Ronald Christman since he first opened the business
-                in 1985. Ron has over 55 years of appliance experience, and strongly values the personal touch that only
-                a small business can provide.
-            </p>
-        </div>
-        <hr>
-        <div id="contact" class="section">
-            <h2>Contact Us</h2>
-            <p text-center>
-                Whether you have a question about products, parts, or about Christman Appliances in general, we would
-                love to hear from you!
-            </p>
-            <div class="flex">
-                <div text-center>
-                    <div inline-block text-left>
-                        <div text-left>
-                            <b>Phone</b>
-                            <br>
-                            <a nobold class="phone" href="tel:717-369-2377">717-369-2377</a>
-                            <br>
-                            <br>
-                            <b>Address</b><br>
-                            <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Christman+Appliances+711+Twin+Bridge+Road+Chambersburg+PA+17202">
-                                711 Twin Bridge Road<br>
-                                Chambersburg, PA 17202
-                            </a>
-                            <br>
-                            <br>
-                            <b>Email</b>
-                            <br>
-                            <a nobold class="email" href="mailto:ChristmanAppliances@gmail.com">ChristmanAppliances@gmail.com</a>
+                    <div class="hero-body">
+                        <p class="eyebrow">711 Twin Bridge Road, Chambersburg, PA 17202</p>
+                        <h1>Christman Appliances</h1>
+                        <p class="hero-lead">
+                            New and personally inspected used home appliances, replacement parts, and honest small-business service since 1985.
+                        </p>
+                        <div class="hero-actions">
+                            <a class="btn btn-primary" href="tel:717-369-2377">Call (717) 369-2377</a>
+                            <a class="btn btn-secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Christman+Appliances+711+Twin+Bridge+Road+Chambersburg+PA+17202">Get Directions</a>
                         </div>
                     </div>
                 </div>
-                <div text-center>
-                    <div inline-block text-left>
-                        <b>Hours of Operation</b>
-                        <div class="hours">
-                            <i>Monday - Friday</i><br>
-                            9:00am - 5:00pm<br><br>
-                            <i>Saturday</i><br>
-                            9:00am - 12:00pm<br><br>
-                            <i>Sunday</i><br>
-                            Closed
+
+                <ul class="trust-strip" aria-label="Store highlights">
+                    <li>
+                        <strong>Est. 1985</strong>
+                        <span>Serving Franklin County</span>
+                    </li>
+                    <li>
+                        <strong><span data-experience-years>55</span>+ Years Experience</strong>
+                        <span>Owner-operated by Ron</span>
+                    </li>
+                    <li>
+                        <strong>Inspected Used Units</strong>
+                        <span>Tested personally in-house</span>
+                    </li>
+                    <li>
+                        <strong>Parts &amp; Orders</strong>
+                        <span>Common parts in stock</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="sales" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="eyebrow">Showroom &amp; Inventory</p>
+                    <h2>Sales &amp; Replacement Parts</h2>
+                </div>
+
+                <div class="split-layout">
+                    <a class="media-frame" href="images/inside.jpg" target="_blank" rel="noopener" aria-label="View full-size photo of appliances inside the showroom">
+                        <picture>
+                            <source srcset="images/inside.webp" type="image/webp">
+                            <img src="images/inside.jpg" alt="Rows of clean white and black refrigerators, gas stoves, and electric ranges inside Christman Appliances" width="1600" height="687" loading="lazy">
+                        </picture>
+                    </a>
+
+                    <div class="split-copy">
+                        <p>
+                            We carry a wide selection of new and quality used household appliances. Every used appliance is personally inspected by Ron before it reaches the floor so you know it is in great working condition.
+                        </p>
+                        <p>
+                            Looking for a specific model or a hard-to-find component? <a class="inline-link" href="#contact">Give us a call</a> or stop by the shop—if we don't have what you need in stock, we can most likely order it for you.
+                        </p>
+                        <div class="brand-pills" aria-label="Featured brands">
+                            <span class="pill">Frigidaire</span>
+                            <span class="pill">GE</span>
+                            <span class="pill">Sharp</span>
+                            <span class="pill">Hoover</span>
                         </div>
                     </div>
                 </div>
+
+                <div class="card-grid">
+                    <article class="info-card">
+                        <h3>Kitchen &amp; Laundry</h3>
+                        <p>Refrigerators, freezers, ranges, stoves, dishwashers, microwaves, washers, and dryers—new and inspected used.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Home Comfort &amp; Care</h3>
+                        <p>Air conditioners, dehumidifiers, and vacuums built to keep your home comfortable year-round.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>Parts &amp; Special Orders</h3>
+                        <p>A wide range of replacement parts for common appliances, plus special ordering when you need a specific unit.</p>
+                    </article>
+                </div>
             </div>
+        </section>
+
+        <section id="about" class="section section-tinted">
+            <div class="container">
+                <div class="split-layout split-about">
+                    <a class="media-frame" href="images/profile.jpg" target="_blank" rel="noopener" aria-label="View full-size photo of Ron Christman by his company truck">
+                        <picture>
+                            <source srcset="images/profile.webp" type="image/webp">
+                            <img src="images/profile.jpg" alt="Ron Christman standing beside the Christman's Appliance pickup truck" width="1600" height="946" loading="lazy">
+                        </picture>
+                    </a>
+
+                    <div class="split-copy">
+                        <p class="eyebrow">Owner &amp; Operator</p>
+                        <h2>About Ron Christman</h2>
+                        <p>
+                            Christman Appliances has been owned and operated by Ronald Christman since he first opened the business in 1985.
+                        </p>
+                        <p>
+                            With over <span data-experience-years>55</span> years of hands-on appliance experience, Ron strongly values the straightforward advice and personal touch that only a local small business can provide.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="eyebrow">Visit or Call</p>
+                    <h2>Hours &amp; Contact</h2>
+                    <p class="section-subtitle">
+                        Have a question about current stock, replacement parts, or an order? We'd love to hear from you.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>Get in Touch</h3>
+                        <dl class="contact-list">
+                            <div>
+                                <dt>Phone</dt>
+                                <dd><a class="contact-phone" href="tel:717-369-2377">717-369-2377</a></dd>
+                            </div>
+                            <div>
+                                <dt>Address</dt>
+                                <dd>
+                                    <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Christman+Appliances+711+Twin+Bridge+Road+Chambersburg+PA+17202">
+                                        711 Twin Bridge Road<br>
+                                        Chambersburg, PA 17202
+                                    </a>
+                                </dd>
+                            </div>
+                            <div>
+                                <dt>Email</dt>
+                                <dd><a href="mailto:ChristmanAppliances@gmail.com">ChristmanAppliances@gmail.com</a></dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>Hours of Operation</h3>
+                        <dl class="hours-list">
+                            <div class="hours-row">
+                                <dt>Monday &ndash; Friday</dt>
+                                <dd>9:00 AM &ndash; 5:00 PM</dd>
+                            </div>
+                            <div class="hours-row">
+                                <dt>Saturday</dt>
+                                <dd>9:00 AM &ndash; 12:00 PM</dd>
+                            </div>
+                            <div class="hours-row">
+                                <dt>Sunday</dt>
+                                <dd>Closed</dd>
+                            </div>
+                        </dl>
+                        <p class="hours-note">Located just off Twin Bridge Road in Chambersburg. Call ahead anytime to check current inventory.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="copyrightYear">2026</span> Ronald Christman &bull; Christman Appliances</p>
+            <p>711 Twin Bridge Road, Chambersburg, PA 17202</p>
         </div>
-        <div id="copyright">
-            <hr>
-            &copy; <span id="copyrightYear">2026</span> Ronald Christman
-        </div>
-    </div>
+    </footer>
 
     <!-- Google tag (gtag.js) - GA4 (Replace G-XXXXXXXXXX with your GA4 Measurement ID) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -207,7 +277,13 @@
         gtag('config', 'G-XXXXXXXXXX');
     </script>
     <script>
-        document.getElementById('copyrightYear').textContent = new Date().getFullYear();
+        const currentYear = new Date().getFullYear();
+        document.getElementById('copyrightYear').textContent = currentYear;
+
+        const experienceYears = Math.max(55, 55 + (currentYear - 2026));
+        document.querySelectorAll('[data-experience-years]').forEach((el) => {
+            el.textContent = experienceYears;
+        });
     </script>
 </body>
 
