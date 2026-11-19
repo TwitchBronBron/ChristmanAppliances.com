@@ -302,6 +302,17 @@ p:last-child {
     color: var(--ink-muted);
 }
 
+.trust-link {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.trust-link:hover span {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
 /* Sections */
 .section {
     padding-block: clamp(2.75rem, 2rem + 2.5vw, 4.5rem);
