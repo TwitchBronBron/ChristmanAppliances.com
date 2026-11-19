@@ -189,6 +189,8 @@ hr {
 
 img.full {
     width: 100%;
+    height: auto;
+    display: block;
     border-radius: 10px;
 }
 

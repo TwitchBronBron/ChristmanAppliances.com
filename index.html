@@ -2,39 +2,97 @@
 <html lang="en">
 
 <head>
-    <title>Christman Appliances - Chambersburg Pennsylvania</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css" />
-    <!--used for title-->
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
-    <!--used for contact info-->
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christman Appliances - Chambersburg, Pennsylvania</title>
+    <meta name="description" content="Christman Appliances in Chambersburg, PA. Family-owned since 1985, offering new and personally inspected used appliances, replacement parts, and personal service.">
+    <link rel="canonical" href="https://christmanappliances.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://christmanappliances.com/">
+    <meta property="og:title" content="Christman Appliances - Chambersburg, PA">
+    <meta property="og:description" content="New and personally inspected used appliances, replacement parts, and trusted local service in Chambersburg, PA since 1985.">
+    <meta property="og:image" content="https://christmanappliances.com/images/outside.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238C3B2B'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='34' font-weight='bold' fill='%23FAF8F5'%3ECA%3C/text%3E%3C/svg%3E">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts v2 with display=swap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Local Business Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ApplianceStore",
+      "name": "Christman Appliances",
+      "url": "https://christmanappliances.com/",
+      "image": "https://christmanappliances.com/images/outside.jpg",
+      "telephone": "+1-717-369-2377",
+      "email": "ChristmanAppliances@gmail.com",
+      "foundingDate": "1985",
+      "founder": {
+        "@type": "Person",
+        "name": "Ronald Christman"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "711 Twin Bridge Road",
+        "addressLocality": "Chambersburg",
+        "addressRegion": "PA",
+        "postalCode": "17202",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "12:00"
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
     <div class="body-container">
-        <a href="images/outside.jpg" target="_blank" pointer>
-            <img class="full" src="images/outside.jpg" alt="Front view of the Christman Appliances building" />
+        <a href="images/outside.jpg" target="_blank" rel="noopener" pointer>
+            <picture>
+                <source srcset="images/outside.webp" type="image/webp">
+                <img class="full" src="images/outside.jpg" alt="Front view of the Christman Appliances building" width="1600" height="747" fetchpriority="high">
+            </picture>
         </a>
         <h1 class="logo">Christman Appliances</h1>
 
         <div class="top-contact-info">
             <div text-left class="info">
-                <a target="_blank" href="https://goo.gl/maps/dGL3MZUiQit">
+                <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Christman+Appliances+711+Twin+Bridge+Road+Chambersburg+PA+17202">
                     711 Twin Bridge Road
                 </a>
             </div>
             <div text-center class="info">
-                <a target="_blank" href="https://goo.gl/maps/dGL3MZUiQit">
+                <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Christman+Appliances+711+Twin+Bridge+Road+Chambersburg+PA+17202">
                     Chambersburg, PA 17202
                 </a>
             </div>
             <div text-right class="info">
-                <a target="_blank" href="tel:717-369-2377">717-369-2377</a>
+                <a href="tel:717-369-2377">717-369-2377</a>
             </div>
         </div>
         <div class="navbar">
-            <hr class="borderline" />
+            <hr class="borderline">
             <ul>
                 <li>
                     <a href="#sales">Sales</a>
@@ -46,14 +104,17 @@
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
-            <hr class="centerline" />
-            <hr class="borderline" />
+            <hr class="centerline">
+            <hr class="borderline">
         </div>
 
         <div id="sales" class="section">
             <h2>Sales</h2>
-            <a href="images/inside.jpg" target="_blank" pointer>
-                <img class="full" src="images/inside.jpg" alt="Many stoves and refrigerators in in orderly rows inside the Christman Appliances store" />
+            <a href="images/inside.jpg" target="_blank" rel="noopener" pointer>
+                <picture>
+                    <source srcset="images/inside.webp" type="image/webp">
+                    <img class="full" src="images/inside.jpg" alt="Many stoves and refrigerators in orderly rows inside the Christman Appliances store" width="1600" height="687" loading="lazy">
+                </picture>
             </a>
             <p>
                 We carry a variety of appliances, including refrigerators, freezers, washers,
@@ -66,24 +127,27 @@
                 appliances.
             </p>
 
-            <p> <a href="#contact">Give us a call</a> or visit the store to see what we have in stock. If we don't have
+            <p><a href="#contact">Give us a call</a> or visit the store to see what we have in stock. If we don't have
                 what you are looking for, we can most likely order it for you!</p>
         </div>
 
-        <hr />
+        <hr>
 
         <div id="about" class="section">
             <h2>About</h2>
-            <a href="images/profile.jpg" target="_blank" pointer>
-                <img class="full" src="images/profile.jpg" alt="Ron Christman standing in front of the Christman Appliances company truck"/>
+            <a href="images/profile.jpg" target="_blank" rel="noopener" pointer>
+                <picture>
+                    <source srcset="images/profile.webp" type="image/webp">
+                    <img class="full" src="images/profile.jpg" alt="Ron Christman standing in front of the Christman Appliances company truck" width="1600" height="946" loading="lazy">
+                </picture>
             </a>
             <p>
-                Chistman Appliances has been owned and operated by Ronald Christman since he first opened the business
+                Christman Appliances has been owned and operated by Ronald Christman since he first opened the business
                 in 1985. Ron has over 55 years of appliance experience, and strongly values the personal touch that only
                 a small business can provide.
             </p>
         </div>
-        <hr />
+        <hr>
         <div id="contact" class="section">
             <h2>Contact Us</h2>
             <p text-center>
@@ -95,21 +159,20 @@
                     <div inline-block text-left>
                         <div text-left>
                             <b>Phone</b>
-                            <br />
-                            <a nobold class="phone" target="_blank" href="tel:717-369-2377">717-369-2377</a>
-                            <br />
-                            <br />
-                            <b>Address</b><br />
-                            <a target="_blank" href="https://goo.gl/maps/dGL3MZUiQit">
-                                711 Twin Bridge Road<br />
+                            <br>
+                            <a nobold class="phone" href="tel:717-369-2377">717-369-2377</a>
+                            <br>
+                            <br>
+                            <b>Address</b><br>
+                            <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Christman+Appliances+711+Twin+Bridge+Road+Chambersburg+PA+17202">
+                                711 Twin Bridge Road<br>
                                 Chambersburg, PA 17202
                             </a>
-                            <br />
-                            <br />
+                            <br>
+                            <br>
                             <b>Email</b>
-                            <br />
-                            <a nobold class="email" target="_blank"
-                                href="mailto:ChristmanAppliances@gmail.com">ChristmanAppliances@gmail.com</a>
+                            <br>
+                            <a nobold class="email" href="mailto:ChristmanAppliances@gmail.com">ChristmanAppliances@gmail.com</a>
                         </div>
                     </div>
                 </div>
@@ -117,33 +180,34 @@
                     <div inline-block text-left>
                         <b>Hours of Operation</b>
                         <div class="hours">
-                            <i>Monday - Friday</i><br />
-                            9:00am - 5pm<br /><br />
-                            <i>Saturday</i><br />
-                            9:00am-12pm
+                            <i>Monday - Friday</i><br>
+                            9:00am - 5:00pm<br><br>
+                            <i>Saturday</i><br>
+                            9:00am - 12:00pm<br><br>
+                            <i>Sunday</i><br>
+                            Closed
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div id="copyright">
-            <hr />
-            &copy; <span id="copyrightYear">2019</span> Ronald Christman
+            <hr>
+            &copy; <span id="copyrightYear">2026</span> Ronald Christman
         </div>
     </div>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136826594-1"></script>
+    <!-- Google tag (gtag.js) - GA4 (Replace G-XXXXXXXXXX with your GA4 Measurement ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
-        gtag('config', 'UA-136826594-1');
+        gtag('config', 'G-XXXXXXXXXX');
     </script>
     <script>
-        //for pages that support javascript, update the copyright year to the current year
-        document.getElementById('copyrightYear').innerHTML = new Date().getFullYear(); 
+        document.getElementById('copyrightYear').textContent = new Date().getFullYear();
     </script>
 </body>
 
