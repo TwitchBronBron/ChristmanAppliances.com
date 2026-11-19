@@ -18,10 +18,13 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%238C3B2B'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='34' font-weight='bold' fill='%23FAF7F2'%3ECA%3C/text%3E%3C/svg%3E">
 
-    <!-- Google Fonts v2 with display=swap -->
+    <!-- Google Fonts v2 with display=swap (non-render-blocking) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    </noscript>
 
     <link rel="stylesheet" href="style.css">
 
@@ -92,8 +95,8 @@
                 <div class="hero-card">
                     <a class="hero-media" href="images/outside.jpg" target="_blank" rel="noopener" aria-label="View full-size photo of the Christman Appliances storefront">
                         <picture>
-                            <source srcset="images/outside.webp" type="image/webp">
-                            <img src="images/outside.jpg" alt="Front view of the Christman Appliances brick storefront on Twin Bridge Road" width="1600" height="747" fetchpriority="high">
+                            <source srcset="images/outside-480.webp 480w, images/outside-800.webp 800w, images/outside.webp 1600w" sizes="(max-width: 1080px) calc(100vw - 2rem), 1080px" type="image/webp">
+                            <img src="images/outside.jpg" srcset="images/outside-480.jpg 480w, images/outside-800.jpg 800w, images/outside.jpg 1600w" sizes="(max-width: 1080px) calc(100vw - 2rem), 1080px" alt="Front view of the Christman Appliances brick storefront on Twin Bridge Road" width="1600" height="747" fetchpriority="high">
                         </picture>
                     </a>
 
@@ -143,8 +146,8 @@
                 <div class="split-layout">
                     <a class="media-frame" href="images/inside.jpg" target="_blank" rel="noopener" aria-label="View full-size photo of appliances inside the showroom">
                         <picture>
-                            <source srcset="images/inside.webp" type="image/webp">
-                            <img src="images/inside.jpg" alt="Rows of clean white and black refrigerators, gas stoves, and electric ranges inside Christman Appliances" width="1600" height="687" loading="lazy">
+                            <source srcset="images/inside-480.webp 480w, images/inside-800.webp 800w, images/inside.webp 1600w" sizes="(max-width: 779px) calc(100vw - 2rem), 540px" type="image/webp">
+                            <img src="images/inside.jpg" srcset="images/inside-480.jpg 480w, images/inside-800.jpg 800w, images/inside.jpg 1600w" sizes="(max-width: 779px) calc(100vw - 2rem), 540px" alt="Rows of clean white and black refrigerators, gas stoves, and electric ranges inside Christman Appliances" width="1600" height="687" loading="lazy" decoding="async">
                         </picture>
                     </a>
 
@@ -186,8 +189,8 @@
                 <div class="split-layout split-about">
                     <a class="media-frame" href="images/profile.jpg" target="_blank" rel="noopener" aria-label="View full-size photo of Ron Christman by his company truck">
                         <picture>
-                            <source srcset="images/profile.webp" type="image/webp">
-                            <img src="images/profile.jpg" alt="Ron Christman standing beside the Christman's Appliance pickup truck" width="1600" height="946" loading="lazy">
+                            <source srcset="images/profile-480.webp 480w, images/profile-800.webp 800w, images/profile.webp 1600w" sizes="(max-width: 779px) calc(100vw - 2rem), 540px" type="image/webp">
+                            <img src="images/profile.jpg" srcset="images/profile-480.jpg 480w, images/profile-800.jpg 800w, images/profile.jpg 1600w" sizes="(max-width: 779px) calc(100vw - 2rem), 540px" alt="Ron Christman standing beside the Christman's Appliance pickup truck" width="1600" height="946" loading="lazy" decoding="async">
                         </picture>
                     </a>
 
