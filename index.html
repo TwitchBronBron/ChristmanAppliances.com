@@ -272,6 +272,19 @@
         gtag('js', new Date());
 
         gtag('config', 'G-FS6ST30KVQ');
+
+        document.addEventListener('click', (e) => {
+            const link = e.target.closest('a[href]');
+            if (!link) return;
+            const href = link.getAttribute('href');
+            if (href.startsWith('tel:')) {
+                gtag('event', 'phone_click', { link_url: href });
+            } else if (href.startsWith('mailto:')) {
+                gtag('event', 'email_click', { link_url: href });
+            } else if (href.includes('google.com/maps')) {
+                gtag('event', 'directions_click', { link_url: href });
+            }
+        });
     </script>
     <script>
         const currentYear = new Date().getFullYear();
